@@ -1,0 +1,878 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body, #root,.app{
+  background-color: black;
+  min-height: 100%;
+  color: white;
+  overflow-x: hidden;
+}
+
+.home_body{
+  position: relative;
+  background-image: url('./Components/bg.jpg');
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.header{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.logo{
+  box-sizing: border-box;
+}
+.heading{
+  box-sizing: border-box;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.heading h1{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+  font-family: cursive;;
+  color: rgb(255, 255, 255);
+  background-color: rgba(58, 211, 234, 0.4);
+  border-radius: 0 60px;
+  box-shadow: 0px 0px 20px rgba(236, 236, 236, 0.5);
+}
+
+.bot{
+  width : 250px;
+  height : 250px;
+}
+
+.button_list{
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+
+.go{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.buttons{
+  padding: 10px;
+  height : 80px;
+}
+
+.tag_button{
+  padding : 20px 40px;
+  width: 100%;
+  background-color: rgba(12, 11, 11, 0.54);
+  color: rgb(249, 253, 249);
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  border-radius: 40px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.submit_button{
+  padding : 20px 40px;
+  width: 100%;
+  background-color: rgba(58, 211, 234, 0.7);
+  color: rgb(249, 253, 249);
+  border-radius: 40px;
+  border: none;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tag_button:hover{
+  background-color: rgba(214, 29, 29, 0.676);
+  color: rgb(249, 253, 249);
+  transition-duration: 0.8s;
+}
+
+.submit_button:hover{
+  background-color: rgba(23, 131, 17, 0.85);
+  color: rgb(249, 253, 249);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+  transition-duration: 2s;
+}
+
+.smiley{
+  width : 220px;
+  height : 220px;
+}
+
+.suggested_tag{
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 0, 0.831);
+  font-size: 20px;
+  padding : 7px 14px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: fantasy;
+}
+
+.norec_class{
+  background-image: url('./Components/bg2.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sad{
+  width : 220px;
+  height : 220px;
+}
+
+.norec_tag{
+  color : white;
+  font-family: serif; 
+  background-color: rgba(255, 230, 0, 0.5);
+  padding: 30px;
+  font-size: 60px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+
+.Action{
+  background-image: url('https://wallpaperaccess.com/full/3591703.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Action .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 40px rgb(3, 128, 10);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Adventure{
+  background-image: url('https://images.hdqwalls.com/download/on-adventure-b9-1920x1080.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Adventure .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(1, 3, 3, 0.8);
+  box-shadow: 0px 0px 60px rgb(13, 115, 136);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Animation{
+  background-image: url('https://images.hdqwalls.com/wallpapers/how-to-train-your-dragon-the-hidden-world-night-fury-and-light-fury-y3.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Animation .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(1, 5, 0, 0.749);
+  box-shadow: 0px 0px 50px rgb(144, 12, 161);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Comedy{
+  background-image: url('https://wallpaperaccess.com/full/1277591.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: right top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Comedy .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 50px rgb(116, 27, 27);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Crime{
+  background-image: url('https://images3.alphacoders.com/103/thumb-1920-1033561.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Crime .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 50px rgb(240, 232, 10);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Documentary{
+  background-image: url('https://wallpaperaccess.com/full/6454521.png');
+  width: 100vw;
+  height: 100vh;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Documentary .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(1, 5, 0, 0.749);
+  box-shadow: 0px 0px 50px rgb(205, 127, 31);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Drama{
+  background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701533042.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Drama .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 50px rgb(252, 251, 250);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Fantasy{
+  background-image: url('https://wallpaperaccess.com/full/2071603.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Fantasy .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 50px rgb(22, 101, 15);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Horror{
+  background-image: url('https://getwallpapers.com/wallpaper/full/f/e/6/322786.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: top left;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Horror .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 50px rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Musical{
+  background-image: url('https://images2.alphacoders.com/789/789853.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Musical .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 50px rgb(224, 224, 13);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Mystery{
+  background-image: url('https://bestwallpapers.in/wp-content/uploads/2018/05/benedict-cumberbatch-and-martin-freeman-sherlock-holmes-tv-show-4k-wallpaper-2560x1440.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Mystery .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(1, 5, 0, 0.749);
+  box-shadow: 0px 0px 50px rgb(251, 251, 251);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Romance{
+  background-image: url('https://images3.alphacoders.com/101/1011335.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Romance .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(2, 0, 3, 0.8);
+  box-shadow: 0px 0px 50px rgba(110, 43, 123, 0.8);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Sci-Fi{
+  background-image: url('https://wallpapers.com/images/hd/iron-man-4k-ocean-art-irhan2wtdz4k4rf5.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Sci-Fi .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(1, 5, 0, 0.749);
+  box-shadow: 0px 0px 50px rgb(1, 255, 225);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.Thriller{
+  background-image: url('https://cdn.wallpapersafari.com/80/28/Ids93x.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Thriller .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(1, 5, 0, 0.8);
+  box-shadow: 0px 0px 50px rgb(255, 255, 254);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.War{
+  background-image: url('https://wallpaperaccess.com/full/2020599.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.War .rec_tag{
+  color : rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  background-color: rgba(1, 5, 0, 0.749);
+  box-shadow: 0px 0px 50px rgb(235, 100, 16);
+  padding: 50px;
+  border-radius: 0px 70px;
+  font-size: 75px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.showlist{
+  position:fixed;
+  bottom: 40px;
+  right: 70px;
+  font-size: 30px;
+  padding : 10px 20px;
+  color: rgb(8, 8, 7);
+  background-color: rgb(248, 230, 39);
+  box-shadow: 0px 0px 30px rgb(8, 8, 8);
+  border: none;
+  border-radius: 20px;
+  font-family: cursive;
+  text-decoration: none;
+}
+
+
+.showlist:hover{
+  position:fixed;
+  bottom: 40px;
+  right: 70px;
+  font-size: 30px;
+  padding : 10px 20px;
+  color: wheat;
+  background-color: rgba(250, 54, 0, 1);
+  box-shadow: 0px 0px 40px rgb(227, 231, 227);
+  border: none;
+  border-radius: 20px;
+  transition-duration: 1s;
+}
+
+
+
+
+
+.poster{
+  /* background-color: black; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.posterImage{
+  height: 600px;
+}
+
+.posterImage > img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.posterImage__overlay {
+  position: absolute;
+  padding: 5rem;
+  bottom: 0px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  transition: opacity .3s;
+}
+
+.posterImage__title {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.posterImage__runtime {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.posterImage__rating {
+  margin-left: 3rem;
+}
+
+.posterImage__description {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 50%;
+}
+
+.listplaybutton{
+  width: 100px;
+  margin: auto;
+  z-index: 0;
+  opacity: 0;
+}
+
+.header_autoplay:hover .listplaybutton {
+  opacity: 1;
+  transition: transform 0.6s;
+}
+
+.listplaybutton:hover {
+  z-index: 1;
+  transform: scale(1.2);
+  border-radius: 50px;
+  box-shadow: 0px 0px 30px white;
+}
+
+
+
+.movie__list {
+  padding: 0 3rem 3rem 3rem;
+  overflow-y: hidden;
+}
+
+.list__title {
+  font-size: 1.75rem;
+  margin:  2.5rem;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  word-spacing: .6rem;
+  background-image: url('./Components/mask.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.list__cards {
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+
+.cards {
+  display: inline-block;
+  transition: transform .2s;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0.19rem;
+  cursor:pointer;
+  min-width:200px;
+  height:300px;
+  z-index:0;
+  border: 1px solid rgb(99, 99, 99);
+}
+
+.cards:hover {
+  transform: scale(1.2);
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cards__img {
+  height: 300px;
+  width : 200px;
+}
+
+.cards__overlay {
+  position: absolute;
+  padding: 0 1rem 1rem 1rem;
+  bottom: 0px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-content: flex-end;
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  opacity: 0;
+  transition: opacity .2s;
+}   
+
+.cards__overlay:hover {
+  opacity: 1;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.card__runtime {
+  font-size: .75rem;
+  margin-bottom: 0.25rem;
+}
+
+.card__rating {
+  float: right;
+}
+
+.card__description {
+  font-style: italic;
+  font-size: .75rem;
+  margin-bottom: 0.25rem;
+}
+
+.playbutton {
+  width : 70px;
+  height : 70px;
+  margin-bottom: 0.4rem;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.4s;
+  z-index: 0;
+}
+
+.playbutton:hover {
+  transform: scale(1.2);
+  z-index: 1000;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.trailer-header{
+  font-size: 35px;
+  font-family: cursive;
+  text-align: center;
+  width :90%;
+  margin: 20px auto;
+  padding : 5px;
+}
+
+.trailer-header h1{
+  background-image: url('./Components/mask.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.trailer-sec{
+  margin: 50px auto;
+  width: 95%;
+}
+
+.left-sec{
+  float: left;
+  width : 25%;
+  box-sizing: border-box;
+  background-color: #03070d;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.trailer_img img{
+  width : 100%;
+}
+
+.trailer_title{
+  border-color: aliceblue;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.trailer_overview{
+  font-style: italic;
+  font-size: 1rem;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+}
+
+.trailer_rem{
+  font-family:cursive;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
+.right-sec{
+  float: right;
+  width : 73%;
+  box-sizing: border-box;
+}
+
+.trailer_video{
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+.trailer_footer{
+  margin-top: 150px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  background-image: url('./Components/mask.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.trailer_links{
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  word-spacing: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+@media screen and (max-width : 1300px){
+  .left-sec{
+    width : 30%;
+  }
+  .right-sec{
+    width : 68%;
+  }
+}
+
+@media screen and (max-width : 800px){
+  .left-sec{
+    width : 100%;
+    margin-bottom: 30px;
+  }
+  .right-sec{
+    width : 100%;
+  }
+
+  .trailer_img{
+    float: left;
+    width: 40%;
+  }
+  .trailer_content{
+    float: right;
+    width: 55%;
+  }
+}
+
+@media screen and (max-width : 550px){
+  .trailer_img{
+    width : 100%;
+  }
+  .trailer_content{
+    width: 100%;
+  }
+}
